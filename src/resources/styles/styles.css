@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/* Container Header */
+
+.Header {
+    top: 0;
+    position: fixed;
+    height: 7rem;
+    width: 100%;
+    background-color: #1B2430;
+    border-bottom: solid 0.1rem #DCD7C9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Header .logoAndTitle {
+    display: inline-flex;
+    align-items: center;
+    font-family: 'Audiowide', cursive;
+}
+
+.logoAndTitle img {
+    margin-right: 1rem;
+    padding: 0.5rem;
+    background-color: #DCD7C9;
+    border-radius: 10%;
+}
+
+.Header nav li {
+    display: inline;
+}
+
+.Header a {   
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    padding: 0.8rem;
+    color: white;
+    padding: 1rem;
+    margin: 0 1rem;
+    border-radius: 0.1rem;
+}
+
+.Header a:hover {
+    background-color: #DCD7C9;
+    color: #1B2430;
+}
+
+/* ----------------------------------------------- */
+
+/* Container Content */
+
+.Container {
+    margin-top: 8.5rem;
+}
+
+/* ------------------------------------------------ */
+
+/* Container Home */
+
+.Home {
+    display: flex;
+    justify-content: center;
+}
+
+.Home img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+}
+
+/* ------------------------------------------------ */
+
+/* Container random */
+
+.randomWord {
+    color: #000;
+    background-color: #DCD7C9;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+/* ------------------------------------------------ */
+
+/* SearchBar */
+
+.searchBar {
+    display: flex;
+    width: fit-content;
+    margin: auto;
+    align-items: center;
+}
+
+.searchBar input {
+    height: 2rem;
+    width: 20rem;
+    outline: none;
+}
+
+input[type='text'] {
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Prosto One', cursive;
+    background-color: #1B2430;
+    padding: 0.2rem;
+    border: solid 0.2rem #DCD7C9;
+    border-radius: 0.3rem;
+    color: white;
+}
+
+.searchBar button {
+    font-size: 1.2rem;
+    width: 6rem;
+    margin-left: 1rem;
+    font-family: 'Prosto One', cursive;
+    background-color: #DCD7C9;
+    border: solid 0.2rem #DCD7C9;
+    padding: 0.4rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+.searchBar button:hover {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+/* ------------------------------------------- */
+
+/* Container Search Results */
+
+.searchResults {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.searchResults div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchResults img {
+    border-radius: 0.3rem;
+}
+
+.searchResults div a {
+    color: #DCD7C9;
+    text-decoration: none;
+}
+
+.searchResults div a:hover {
+    text-decoration: underline;
+}
+
+/* ----------------------------------------------- */
+
+/* Loading spinner */
+
+.loadingSpinner {
+    background-color: #1B2430;
+    border-radius: 0.5rem;
+    border: solid 0.1rem #DCD7C9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+/* ---------------------------------------------------- */
+
+/* Acknowledgemnts */
+
+.acknowledgements {
+    margin: 1.5rem;
+    text-align: justify;
+}
+
+.acknowledgements a {
+    color: #DCD7C9;
+    text-decoration: none;
+}
+
+.acknowledgements a:hover {
+    color: #DCD7C9;
+    text-decoration: underline;
+}

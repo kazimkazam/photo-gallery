@@ -7,6 +7,18 @@ interface SearchPhotosProps {
 };
 
 const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
+    // return that there were no results found
+    if (props.photos.length !== 0) {
+        if (props.photos[0].photos.length === 0 && props.status === 'succeded') {
+            return(
+                <div className={ 'searchResults' }>
+                    <p>No photos were found related with this word.</p>
+                </div>
+            )
+        }
+    };
+
+    // return photos found
     if (props.photos.length !== 0 && props.status === 'succeded') {
         return(
             <div className={ 'searchResults' }>
@@ -23,6 +35,7 @@ const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
             </div>
         );
     } else if (props.photos.length !== 0 && props.status === 'loading') {
+        // show loading spinner while waiting for photos fetching
         return(
             <div className={ 'searchResults' }>
                 { props.photos.map(photosArray => photosArray.photos.map(photo => {
@@ -40,19 +53,15 @@ const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
             </div>
         );
     } else if (props.photos.length === 0 && props.status === 'loading') {
+        // show loading spinner while waiting for photos fetching on first search made
         return(
             <div className={ 'searchResults' }>
                 <LoadingSpinner />
             </div>
         )
-    } else if (props.photos.length === 0 && props.status === 'succeded') {
-        return(
-            <div className={ 'searchResults' }>
-                <p>No photos were found related with this word.</p>
-            </div>
-        )
     };
 
+    // default
     return(
         <div></div>
     );

@@ -8,6 +8,19 @@ interface RandomPhotosProps {
 };
 
 const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => {
+    // return that there were no results found
+    if (props.photos.length !== 0) {
+        if (props.photos[0].photos.length === 0 && props.status === 'succeded') {
+            return(
+                <div className={ 'searchResults' }>
+                    <h3>Random word is <span className="randomWord">{ props.randomWord }</span></h3>
+                    <p>No photos were found related with this word.</p>
+                </div>
+            )
+        }
+    };
+    
+    // return photos found
     if (props.photos.length !== 0 && props.status === 'succeded') {
         return(
             <div className={ 'searchResults' }>
@@ -25,6 +38,7 @@ const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => 
             </div>
         );
     } else if (props.photos.length !== 0 && props.status === 'loading') {
+        // show loading spinner while waiting for photos fetching
         return(
             <div className={ 'searchResults' }>
                 <h3>Random word is <span className="randomWord">{ props.randomWord }</span></h3>
@@ -43,23 +57,17 @@ const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => 
             </div>
         );
     } else if (props.photos.length === 0 && props.status === 'loading') {
+        // show loading spinner while waiting for photos fetching on first search made
         return(
             <div className={ 'searchResults' }>
                 <LoadingSpinner />
             </div>
         )
-    } else if (props.photos.length === 0 && props.status === 'succeded') {
-        return(
-            <div className={ 'searchResults' }>
-                <p>No photos were found related with this word.</p>
-            </div>
-        )
     };
 
+    // default
     return(
-        <div className={ 'searchResults' }>
-            
-        </div>
+        <div className={ 'searchResults' }></div>
     );
 };
 

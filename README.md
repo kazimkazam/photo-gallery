@@ -4,7 +4,7 @@ The application is deployed and can be accessed through the link below:
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/4be9d3dc-7902-45b4-9cba-7ece2170c023/deploy-status)](https://app.netlify.com/sites/kazimkazam-photo-gallery/deploys)
 
-## 
+## https://kazimkazam-photo-gallery.netlify.app
 
 This application is based on React-Redux and coded with Typescript and it delivers a single page application (SPA) that allows the user to search for photos. The photos can be searched using one of the two following navigation tabs:
 - random: the website will return the user all the photos it can fetch related with a random word;

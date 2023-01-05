@@ -24,6 +24,8 @@ The SPA was coded using TypeScript and React and Redux libraries.
 
 The SPA fetches all photos from Pexels API (https://www.pexels.com/api/documentation/). To find a random word to search for related photos, the SPA uses the random-words package (https://www.npmjs.com/package/random-words).
 
+The Footer component was not planned to be like it is, i.e., not even looks like a footer... But I'll leave this way for now. This way, is also preety fast to change the component's look to whatever we may want to.
+
 The website is running on:
 
 - "@reduxjs/toolkit": "^1.9.1",

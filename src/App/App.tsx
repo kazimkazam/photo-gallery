@@ -1,13 +1,13 @@
 import './App.css';
 import './resources/styles/styles.css';
 import { Provider } from 'react-redux';
-import store from './redux/store/store';
+import store from '../redux/store/store';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { ContainerHeader } from './Components/ContainerComponents/ContainerHeader/ContainerHeader';
-import { ContainerHome } from './Components/ContainerComponents/ContainerHome/ContainerHome';
-import { ContainerRandomPhotos } from './Components/ContainerComponents/ContainerRandomPhotos/ContainerRandomPhotos';
-import { ContainerSearchPhotos } from './Components/ContainerComponents/ContainerSearchPhotos/ContainerSearchPhotos';
-import { Acknowledgements } from './Components/PresentationalComponents/Acknowledgements/Acknowledgements';
+import { ContainerHeader } from '../Components/ContainerComponents/ContainerHeader/ContainerHeader';
+import { ContainerHome } from '../Components/ContainerComponents/ContainerHome/ContainerHome';
+import { ContainerRandomPhotos } from '../Components/ContainerComponents/ContainerRandomPhotos/ContainerRandomPhotos';
+import { ContainerSearchPhotos } from '../Components/ContainerComponents/ContainerSearchPhotos/ContainerSearchPhotos';
+import { Acknowledgements } from '../Components/PresentationalComponents/Acknowledgements/Acknowledgements';
 
 function App() {
   return (

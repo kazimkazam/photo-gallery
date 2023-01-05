@@ -26,6 +26,8 @@ The SPA was coded using TypeScript and React and Redux libraries.
 
 The SPA fetches all photos from Pexels API (https://www.pexels.com/api/documentation/). To find a random word to search for related photos, the SPA uses the random-words package (https://www.npmjs.com/package/random-words).
 
+The loading spinner animation used while waiting for photos to be fetched and shown is based on the react-loading package (https://www.npmjs.com/package/react-loading).
+
 The Footer component was not planned to be like it is, i.e., not even looks like a footer... But I'll leave this way for now. This way, is also preety fast to change the component's look to whatever we may want to.
 
 The website is running on:
@@ -63,7 +65,8 @@ When the use enters the website, the homepage will be presented. From here, the 
 
 - Camera icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/camera);
 - Homepage Wallpaper: photo by Tim Mossholder from Pexels (https://www.pexels.com/photo/black-and-white-wooden-welcome-sign-3643925/);
-- All photos present on this website are fetched from Pexels (https://www.pexels.com)
+- All photos present on this website are fetched from Pexels (https://www.pexels.com);
+- Loading spinner animation (https://www.npmjs.com/package/react-loading).
 
 ## Licence
 

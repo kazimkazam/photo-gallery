@@ -1,6 +1,6 @@
 import { useAppDispatch, useAppSelector } from '../../../redux/hooks';
 import { selectSearchedPhotos, selectSearchTopic, selectPage, selectFetchStatus } from "../../../redux/features/getSearchedPhotosSlice";
-import { handleChange, handlePageChange, handleReset } from "../../../redux/features/getSearchedPhotosSlice";
+import { handleChange, handlePageChange, handleNewSearch } from "../../../redux/features/getSearchedPhotosSlice";
 import { fetchSearchedPhotosApi, options } from "../../../resources/utils/fetchPhotos";
 import { SearchBar } from "../../PresentationalComponents/SearchBar/SearchBar";
 import { SearchPhotosResults } from "../../PresentationalComponents/SearchPhotos/SearchPhotosResults";
@@ -29,9 +29,6 @@ const ContainerSearchPhotos = () => {
 
     // handle search
     const searchHandler = (page: number) => {
-        // clear results from possible previous search
-        dispatch(handleReset());
-
         let options: options = {
             page: page,
             perPage: 30,
@@ -44,11 +41,13 @@ const ContainerSearchPhotos = () => {
     // handle enter key keydown or search Button onClick
     const enterKeyDownHandler = (event: React.KeyboardEvent) => {
         if (event.key === 'Enter') {
+            dispatch(handleNewSearch());
             searchHandler(page);
         };
     };
 
     const clickHandler = () => {
+        dispatch(handleNewSearch());
         searchHandler(page);
     };
 

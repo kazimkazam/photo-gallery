@@ -63,6 +63,15 @@ export const getSearchedPhotosSlice = createSlice({
             state.page += 1;
         },
 
+        handleNewSearch: (state) => {
+            // the same as handleReset but without resetting search topic so that it can be used for the fetch 
+            state.photos = [];
+            state.randomWord = [];
+            state.page = 1;
+            state.fetchStatus = 'idle';
+            state.errorStatus = '';
+        },
+
         handleReset: (state) => {
             state.photos = [];
             state.randomWord = [];
@@ -89,7 +98,7 @@ export const getSearchedPhotosSlice = createSlice({
     }
 });
 
-export const { handleGetWord, handleChange, handlePageChange, handleReset } = getSearchedPhotosSlice.actions;
+export const { handleGetWord, handleChange, handlePageChange, handleNewSearch, handleReset } = getSearchedPhotosSlice.actions;
 
 export const selectSearchedPhotos = (state: RootState) => state.getSearchedPhotos.photos;
 export const selectRandomWord = (state: RootState) => state.getSearchedPhotos.randomWord;

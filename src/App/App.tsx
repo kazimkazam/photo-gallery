@@ -1,5 +1,5 @@
 import './App.css';
-import './resources/styles/styles.css';
+import '../resources/styles/styles.css';
 import { Provider } from 'react-redux';
 import store from '../redux/store/store';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';

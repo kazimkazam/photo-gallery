@@ -20,7 +20,9 @@ This application is based on React-Redux and coded with Typescript and it delive
 
 ## Development
 
+The SPA was coded using TypeScript and React and Redux libraries.
 
+The SPA fetches all photos from Pexels API (https://www.pexels.com/api/documentation/). To find a random word to search for related photos, the SPA uses the random-words package (https://www.npmjs.com/package/random-words).
 
 The website is running on:
 
@@ -39,7 +41,7 @@ The website is running on:
 
 ## How to Use
 
-
+When the use enters the website, the homepage will be presented. From here, the user can click one of 4 navigation tabs: 1) home - to enter / reenter the homepage; 2) random - to enter the random page where the user will be shown all the photos found related to a random word; 3) search - to enter a search page where the user can insert any topic and search for related photos. After clicking on the search button or hitting enter while the text input is active, the website will fetch all related photos and present them to the user; and 4) acknowledgements - page where credits are given and some "mock" terms of use are presented.
 
 ## Screenshots
 
@@ -51,12 +53,12 @@ The website is running on:
 
 ## Author
 
-
+[@kazimkazam](https://github.com/kazimkazam) (monsieurkazimkazam@gmail.com)
 
 ## References
 
 - Camera icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/camera);
-- Home Wallpaper: photo by Tim Mossholder from Pexels (https://www.pexels.com/photo/black-and-white-wooden-welcome-sign-3643925/);
+- Homepage Wallpaper: photo by Tim Mossholder from Pexels (https://www.pexels.com/photo/black-and-white-wooden-welcome-sign-3643925/);
 - All photos present on this website are fetched from Pexels (https://www.pexels.com)
 
 ## Licence

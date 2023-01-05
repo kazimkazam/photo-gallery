@@ -4,7 +4,7 @@ const Acknowledgements = () => {
             <h2>Acknowledgements</h2>
             <ul>
                 <li><a href="https://www.flaticon.com/free-icons/camera" title="camera icons">Website logo: camera icons created by Freepik - Flaticon</a></li>
-                <li><a href="https://www.pexels.com/photo/black-and-white-wooden-welcome-sign-3643925/" title="password icons">Home Wallpaper: photo by Tim Mossholder from Pexels</a></li>
+                <li><a href="https://www.pexels.com/photo/black-and-white-wooden-welcome-sign-3643925/" title="password icons">Homepage Wallpaper: photo by Tim Mossholder from Pexels</a></li>
                 <li><a href="https://www.pexels.com">All photos present on this website are fetched from Pexels</a></li>
             </ul>
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import './resources/styles/styles.css';
 import { Provider } from 'react-redux/es/exports';

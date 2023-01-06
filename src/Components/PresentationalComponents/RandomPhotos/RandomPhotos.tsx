@@ -12,7 +12,7 @@ const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => 
     if (props.photos.length !== 0) {
         if (props.photos[0].photos.length === 0 && props.status === 'succeded') {
             return(
-                <div className={ 'searchResults' }>
+                <div className={ 'searchResults' } data-testid={ 'Random' }>
                     <h3>Random word is <span className="randomWord">{ props.randomWord }</span></h3>
                     <p>No photos were found related with this word.</p>
                 </div>
@@ -23,7 +23,7 @@ const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => 
     // return photos found
     if (props.photos.length !== 0 && props.status === 'succeded') {
         return(
-            <div className={ 'searchResults' }>
+            <div className={ 'searchResults' } data-testid={ 'Random' }>
                 <h3>Random word is <span className="randomWord">{ props.randomWord }</span></h3>
                 { props.photos.map(photosArray => photosArray.photos.map(photo => {
                     return(
@@ -40,7 +40,7 @@ const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => 
     } else if (props.photos.length !== 0 && props.status === 'loading') {
         // show loading spinner while waiting for photos fetching
         return(
-            <div className={ 'searchResults' }>
+            <div className={ 'searchResults' } data-testid={ 'Random' }>
                 <h3>Random word is <span className="randomWord">{ props.randomWord }</span></h3>
                 { props.photos.map(photosArray => photosArray.photos.map(photo => {
                     return(
@@ -59,7 +59,7 @@ const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => 
     } else if (props.photos.length === 0 && props.status === 'loading') {
         // show loading spinner while waiting for photos fetching on first search made
         return(
-            <div className={ 'searchResults' }>
+            <div className={ 'searchResults' } data-testid={ 'Random' }>
                 <LoadingSpinner />
             </div>
         )
@@ -67,7 +67,7 @@ const RandomPhotos: React.FC<RandomPhotosProps> = (props: RandomPhotosProps) => 
 
     // default
     return(
-        <div className={ 'searchResults' }></div>
+        <div className={ 'searchResults' } data-testid={ 'Random' }></div>
     );
 };
 

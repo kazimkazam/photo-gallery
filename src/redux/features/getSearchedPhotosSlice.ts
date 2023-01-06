@@ -28,7 +28,7 @@ export interface Photos {
 
 export type RequestState = 'idle' | 'loading' | 'succeded' | 'failed';
 
-interface SearchedPhotosState {
+export interface SearchedPhotosState {
     photos: Photos[],
     randomWord: string[],
     searchTopic: string,

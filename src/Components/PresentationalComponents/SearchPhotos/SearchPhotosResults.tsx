@@ -11,8 +11,8 @@ const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
     if (props.photos.length !== 0) {
         if (props.photos[0].photos.length === 0 && props.status === 'succeded') {
             return(
-                <div className={ 'searchResults' }>
-                    <p>No photos were found related with this word.</p>
+                <div className={ 'searchResults' } data-testid={ 'Search' }>
+                    <p>No photos were found related with this topic.</p>
                 </div>
             )
         }
@@ -21,10 +21,10 @@ const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
     // return photos found
     if (props.photos.length !== 0 && props.status === 'succeded') {
         return(
-            <div className={ 'searchResults' }>
+            <div className={ 'searchResults' } data-testid={ 'Search' }>
                 { props.photos.map(photosArray => photosArray.photos.map(photo => {
                     return(
-                        <div>
+                        <div key={ photo.id }>
                             <img src={ photo.src.large } alt={ photo.alt } key={ photo.id } />
                             <p>photo by:</p>
                             <a href={ photo.photographer_url } >@{ photo.photographer }</a>
@@ -37,10 +37,10 @@ const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
     } else if (props.photos.length !== 0 && props.status === 'loading') {
         // show loading spinner while waiting for photos fetching
         return(
-            <div className={ 'searchResults' }>
+            <div className={ 'searchResults' } data-testid={ 'Search' }>
                 { props.photos.map(photosArray => photosArray.photos.map(photo => {
                     return(
-                        <div>
+                        <div key={ photo.id }>
                             <img src={ photo.src.large } alt={ photo.alt } key={ photo.id } />
                             <p>photo by:</p>
                             <a href={ photo.photographer_url } >@{ photo.photographer }</a>
@@ -55,7 +55,7 @@ const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
     } else if (props.photos.length === 0 && props.status === 'loading') {
         // show loading spinner while waiting for photos fetching on first search made
         return(
-            <div className={ 'searchResults' }>
+            <div className={ 'searchResults' } data-testid={ 'Search' }>
                 <LoadingSpinner />
             </div>
         )
@@ -63,7 +63,7 @@ const SearchPhotosResults: React.FC<SearchPhotosProps> = (props) => {
 
     // default
     return(
-        <div></div>
+        <div data-testid={ 'Search' }></div>
     );
 };
 

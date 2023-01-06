@@ -9,7 +9,10 @@ const ContainerHeader = () => {
         dispatch(handleReset());
 
         // clear search input text
-        (document.getElementById('searchInput') as HTMLInputElement).value = '';
+        const clearInput = document.getElementById('searchInput');
+        if (clearInput) {
+            (document.getElementById('searchInput') as HTMLInputElement).value = '';
+        };
     };
 
     return(

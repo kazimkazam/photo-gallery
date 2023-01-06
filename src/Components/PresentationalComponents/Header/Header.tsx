@@ -14,9 +14,9 @@ const Header = (props: HeaderProps) => {
 
             <nav>
                 <ul>
-                    <li><NavLink to={ '/' } onClick={ props.onClick } >home</NavLink></li>
-                    <li><NavLink to={ '/random' } onClick={ props.onClick } >random</NavLink></li>
-                    <li><NavLink to={ '/search' } onClick={ props.onClick } >search</NavLink></li>
+                    <li><NavLink to={ '/' } onClick={ props.onClick } data-testid={ 'homeNav' } >home</NavLink></li>
+                    <li><NavLink to={ '/random' } onClick={ props.onClick } data-testid={ 'randomNav' } >random</NavLink></li>
+                    <li><NavLink to={ '/search' } onClick={ props.onClick } data-testid={ 'searchNav' } >search</NavLink></li>
                     <li><NavLink to={ '/acknowledgements' } onClick={ props.onClick } >acknowledgements</NavLink></li>
                 </ul>
             </nav>

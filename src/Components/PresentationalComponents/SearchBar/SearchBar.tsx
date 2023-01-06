@@ -6,9 +6,9 @@ type Props = {
 
 const SearchBar = (props: Props) => {
     return(
-        <div className="searchBar">
-            <input id={ 'searchInput' } type={ 'text' } placeholder={ 'insert the search topic here.' } onChange={ props.onChange } onKeyDown={ props.onKeyDown } />
-            <button onClick={ props.onClick } >search</button>
+        <div className="searchBar" data-testid={ 'searchBar' }>
+            <input id={ 'searchInput' } data-testid={ 'searchInput' } type={ 'text' } placeholder={ 'insert the search topic here.' } onChange={ props.onChange } onKeyDown={ props.onKeyDown } />
+            <button onClick={ props.onClick } data-testid={ 'searchButton' } >search</button>
         </div>
     );
 };

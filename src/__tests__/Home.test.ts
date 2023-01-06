@@ -1,17 +1,23 @@
-import { render, fireEvent, screen, waitFor } from "@testing-library/react";
-import { Provider } from 'react-redux';
-import { store } from '../redux/store/store';
+import { SearchedPhotosState } from "../redux/features/getSearchedPhotosSlice";
+import { screen, fireEvent, waitFor } from "@testing-library/react";
+import store from "../redux/store/store";
 
-const initialState = {
-    
-};
+// app render is defined in setupTests.tsx
 
-describe('tests related with Home Page', () => {
-    beforeEach(() => {
+describe('tests related with Home page', () => {
+    const initialState: SearchedPhotosState = {
+        photos: [],
+        randomWord: [],
+        searchTopic: '',
+        page: 1,
+        fetchStatus: 'idle',
+        errorStatus: ''
+    };
 
-    });
+    it('should load the Home page with initial state', () => {
+        expect(screen.getByTestId('Home')).toBeInTheDocument();
 
-    it('', () => {
-
+        let state = store.getState().getSearchedPhotos;
+        expect(state).toStrictEqual(initialState);
     });
 });

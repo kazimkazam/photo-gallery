@@ -51,39 +51,39 @@ When the user enters the website, the homepage will be presented. From here, the
 
 ### Page Home
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/home.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/home.png?raw=true)
 
 ### Page Random loading photos
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomLoadingPhotos.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomLoadingPhotos.png?raw=true)
 
 ### Page Random
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomPhotos.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomPhotos.png?raw=true)
 
 ### Page Random loading photos when no results are found
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomNoPhotos.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomNoPhotos.png?raw=true)
 
 ### Page Search
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchPage.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchPage.png?raw=true)
 
 ### Page Search loading photos
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchLoadingPhotos.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchLoadingPhotos.png?raw=true)
 
 ### Page Search results
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchResults.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchResults.png?raw=true)
 
 ### Page Search when no results are found
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchNoPhotos.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchNoPhotos.png?raw=true)
 
 ### Page Random and Search while loading photos on scroll
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/photosLoadingOnScroll.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/photosLoadingOnScroll.png?raw=true)
 
 ## Tests
 
@@ -97,7 +97,7 @@ To intersect requests made to the Pexels API, it was used the Mock Service Worke
 - "@types/jest": "^27.5.2"
 - "msw": "^0.49.2"
 
-[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/tests.png?raw=true)
+![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/tests.png?raw=true)
 
 ## Author
 

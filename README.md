@@ -87,6 +87,16 @@ When the user enters the website, the homepage will be presented. From here, the
 
 ## Tests
 
+Tests were conducted using React Testing Library.
+
+To intersect requests made to the Pexels API, it was used the Mock Service Worker (MSW) and mocked responses were returned.
+
+- "@testing-library/jest-dom": "^5.16.5"
+- "@testing-library/react": "^13.4.0"
+- "@testing-library/user-event": "^13.5.0"
+- "@types/jest": "^27.5.2"
+- "msw": "^0.49.2"
+
 [!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/tests.png?raw=true)
 
 ## Author

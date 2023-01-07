@@ -45,11 +45,41 @@ The website is running on:
 
 ## How to Use
 
-When the use enters the website, the homepage will be presented. From here, the user can click one of 4 navigation tabs: 1) home - to enter / reenter the homepage; 2) random - to enter the random page where the user will be shown all the photos found related to a random word; 3) search - to enter a search page where the user can insert any topic and search for related photos. After clicking on the search button or hitting enter while the text input is active, the website will fetch all related photos and present them to the user; and 4) acknowledgements - page where credits are given and some "mock" terms of use are presented.
+When the user enters the website, the homepage will be presented. From here, the user can click one of 4 navigation tabs: 1) home - to enter / reenter the homepage; 2) random - to enter the random page where the user will be shown all the photos found related to a random word; 3) search - to enter a search page where the user can insert any topic and search for related photos. After clicking on the search button or hitting enter while the text input is active, the website will fetch all related photos and present them to the user; and 4) acknowledgements - page where credits are given and some "mock" terms of use are presented.
 
 ## Screenshots
 
+###
 
+[!image]()
+
+###
+
+[!image]()
+
+###
+
+[!image]()
+
+###
+
+[!image]()
+
+###
+
+[!image]()
+
+###
+
+[!image]()
+
+###
+
+[!image]()
+
+###
+
+[!image]()
 
 ## Tests
 

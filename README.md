@@ -51,39 +51,39 @@ When the user enters the website, the homepage will be presented. From here, the
 
 ### Page Home
 
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/home.png?raw=true)
 
 ### Page Random loading photos
 
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomLoadingPhotos.png?raw=true)
 
 ### Page Random
 
-[!image]()
-
-### Page Random loading photos on scroll
-
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomPhotos.png?raw=true)
 
 ### Page Random loading photos when no results are found
 
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomNoPhotos.png?raw=true)
 
 ### Page Search
 
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchPage.png?raw=true)
 
 ### Page Search loading photos
 
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchLoadingPhotos.png?raw=true)
 
 ### Page Search results
 
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchResults.png?raw=true)
 
 ### Page Search when no results are found
 
 [!image]()
+
+### Page Random and Search while loading photos on scroll
+
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/photosLoadingOnScroll.png?raw=true)
 
 ## Tests
 

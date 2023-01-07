@@ -49,41 +49,45 @@ When the user enters the website, the homepage will be presented. From here, the
 
 ## Screenshots
 
-###
+### Page Home
 
 [!image]()
 
-###
+### Page Random loading photos
 
 [!image]()
 
-###
+### Page Random
 
 [!image]()
 
-###
+### Page Random loading photos on scroll
 
 [!image]()
 
-###
+### Page Random loading photos when no results are found
 
 [!image]()
 
-###
+### Page Search
 
 [!image]()
 
-###
+### Page Search loading photos
 
 [!image]()
 
-###
+### Page Search results
+
+[!image]()
+
+### Page Search when no results are found
 
 [!image]()
 
 ## Tests
 
-
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/tests.png?raw=true)
 
 ## Author
 

@@ -78,7 +78,31 @@ describe('tests related with Search photos Page', () => {
     });
 
     it('should fetch more photos when user scrolls to the end of page', async () => {
+        // insert search topic, verify that photos are being shown, then fire the scroll event
+        fireEvent.change(screen.getByTestId('searchInput'), { target: { value: 'test' } } );
 
+        let state = store.getState().getSearchedPhotos;
+        expect(state.searchTopic).toBe('test');
+
+        // click on search button
+        fireEvent.click(screen.getByTestId('searchButton'));
+
+        // verify
+        // check that photos are being shown
+        await waitFor(() => expect(screen.getByAltText('Man Doing A Sample Test In The Laboratory')).toBeInTheDocument());
+        await waitFor(() => expect(screen.getByAltText('Man Looking Through A Microscope')).toBeInTheDocument());
+        await waitFor(() => expect(screen.getByAltText('An Ophthalmologist Conducting a Vision Test')).toBeInTheDocument());
+
+        // fire scroll event
+        fireEvent.scroll(window, { target: { scrollY: 900 } });
+
+        // check that more photos were fetched and are now being shown
+        await waitFor(() => expect(screen.getAllByAltText('Man Doing A Sample Test In The Laboratory').length).toBeGreaterThan(1));
+        await waitFor(() => expect(screen.getAllByAltText('Man Looking Through A Microscope').length).toBeGreaterThan(1));
+        await waitFor(() => expect(screen.getAllByAltText('An Ophthalmologist Conducting a Vision Test').length).toBeGreaterThan(1));
+
+        state = store.getState().getSearchedPhotos;
+        expect(state.page).toBeGreaterThan(1);
     });
 
     it('should show that there were no photos found related with the search topic that was used if that is the case', async () => {

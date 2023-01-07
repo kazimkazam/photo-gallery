@@ -21,16 +21,16 @@ beforeEach(() => {
         <Provider store={ store }>
             <div className="App">
                 <Router>
-                <ContainerHeader />
+                    <ContainerHeader />
 
-                <div className='Container'>
-                    <Routes>
-                    <Route path={ '/' } element={ <ContainerHome /> } ></Route>
-                    <Route path={ '/random' } element={ <ContainerRandomPhotos /> } ></Route>
-                    <Route path={ '/search' } element={ <ContainerSearchPhotos /> } ></Route>
-                    <Route path={ '/acknowledgements' } element={ <Acknowledgements /> } ></Route>
-                    </Routes>
-                </div>
+                    <div className='Container'>
+                        <Routes>
+                            <Route path={ '/' } element={ <ContainerHome /> } ></Route>
+                            <Route path={ '/random' } element={ <ContainerRandomPhotos /> } ></Route>
+                            <Route path={ '/search' } element={ <ContainerSearchPhotos /> } ></Route>
+                            <Route path={ '/acknowledgements' } element={ <Acknowledgements /> } ></Route>
+                        </Routes>
+                    </div>
                 </Router>
             </div>
         </Provider>

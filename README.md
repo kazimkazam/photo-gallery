@@ -79,7 +79,7 @@ When the user enters the website, the homepage will be presented. From here, the
 
 ### Page Search when no results are found
 
-[!image]()
+[!image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/searchNoPhotos.png?raw=true)
 
 ### Page Random and Search while loading photos on scroll
 

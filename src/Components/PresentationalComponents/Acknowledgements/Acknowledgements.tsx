@@ -11,7 +11,7 @@ const Acknowledgements = () => {
             <br></br>
             <h2>Terms of Service</h2>
             <p>By accessing the present website you agree to the Terms of Service as outlined below.</p>
-            <p>Passwords Generator may revise these conditions of use at any time by updating this posting.
+            <p>photo gallery app may revise these conditions of use at any time by updating this posting.
 This page should be visited periodically to review the conditions of use stated here, because they are binding on you.
 If you do not accept the conditions of use, this website should not be used by you.</p>
 
@@ -20,12 +20,12 @@ If you do not accept the conditions of use, this website should not be used by y
 
             <h3>Accuracy of Information</h3>
             <p>The material may contain inaccuracies or typographical errors. All items listed for sale are considered an invitation to treat.
-Passwords Generator makes no claims, warranties or liabilities of the use of the information on this website. Changes are periodically made to
+photo gallery app makes no claims, warranties or liabilities of the use of the information on this website. Changes are periodically made to
 this website and may be made at any time.</p>
 
             <h3>No Warranties</h3>
             <p>All the information on this website is published in good faith and for information purpose only.
-Passwords Generator does not make any warranties about the completeness, reliability and accuracy of this information.
+photo gallery app does not make any warranties about the completeness, reliability and accuracy of this information.
 Any action you take upon the information you find on this website, is strictly at your own risk.
 We will not be liable for any losses and/or damages in connection with the use of our website.</p>
 
@@ -45,7 +45,7 @@ approval or endorsement of the linked web site by us. Use of any such linked web
             <h2>Author</h2>
             <a href="https://github.com/kazimkazam" >@kazimkazam</a>
             <p>Repository can be found by clicking on the link below.</p>
-            {/* <a href="https://github.com/kazimkazam/password-generator">kazimkazam/password-generator</a> */}
+            <a href="https://github.com/kazimkazam/photo-gallery">kazimkazam/photo-gallery</a>
         </div>
     );
 };

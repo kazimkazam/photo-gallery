@@ -34,8 +34,10 @@ const ContainerRandomPhotos = () => {
 
     // get random word when page loads
     useEffect(() => {
-        dispatch(handleGetWord());
-    }, [  ]);
+        if (!randomWord[0]) {
+            dispatch(handleGetWord());
+        };
+    });
 
     useEffect(() => {
         if (randomWord.length !== 0) {

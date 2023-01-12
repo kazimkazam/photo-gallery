@@ -1,11 +1,11 @@
-import ReactLoading from 'react-loading';
+import LoadingSpinnerComponent from 'react-spinners-components';
 
 const LoadingSpinner = () => {
     return(
         <div className={ 'loadingSpinner' } data-testid={ 'loadingSpinner' } >
             <h3>please, wait a moment.</h3>
             <h3>photos are loading...</h3>
-            <ReactLoading type={ 'bubbles' } color={ '#DCD7C9' } height={ '8rem' } width={ '8rem' } />
+            <LoadingSpinnerComponent type={ 'Ripple' } colors={ [ '#DCD7C9', '#39B5E0'] } size={ '150px' } />
         </div>
     );
 };

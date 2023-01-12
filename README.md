@@ -24,7 +24,7 @@ The SPA was coded using TypeScript and React and Redux libraries.
 
 The SPA fetches all photos from Pexels API (https://www.pexels.com/api/documentation/). To find a random word to search for related photos, the SPA uses the random-words package (https://www.npmjs.com/package/random-words).
 
-The loading spinner animation used while waiting for photos to be fetched and shown is based on the react-loading package (https://www.npmjs.com/package/react-loading).
+The loading spinner animation used while waiting for photos to be fetched and shown is based on the react-spinners-components package (https://www.npmjs.com/package/react-spinners-components / https://github.com/kazimkazam/react-spinners-components).
 
 The Footer component was not planned to be like it is, i.e., not even looks like a footer... But I'll leave this way for now. This way, is also preety fast to change the component's look to whatever we may want to.
 
@@ -37,11 +37,11 @@ The website is running on:
 - "random-words": "^1.2.0",
 - "react": "^18.2.0",
 - "react-dom": "^18.2.0",
-- "react-loading": "^2.0.3",
 - "react-redux": "^8.0.5",
 - "react-router-dom": "^6.6.1",
 - "react-scripts": "5.0.1",
 - "typescript": "^4.9.4",
+- "react-spinners-components": "^2.0.1",
 
 ## How to Use
 
@@ -61,7 +61,7 @@ When the user enters the website, the homepage will be presented. From here, the
 
 ![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomPhotos.png?raw=true)
 
-### Page Random loading photos when no results are found
+### Page Random when no results are found
 
 ![image](https://github.com/kazimkazam/photo-gallery/blob/master/screenshots/client/randomNoPhotos.png?raw=true)
 
@@ -108,7 +108,7 @@ To intersect requests made to the Pexels API, it was used the Mock Service Worke
 - Camera icons created by Freepik - Flaticon (https://www.flaticon.com/free-icons/camera);
 - Homepage Wallpaper: photo by Tim Mossholder from Pexels (https://www.pexels.com/photo/black-and-white-wooden-welcome-sign-3643925/);
 - All photos present on this website are fetched from Pexels (https://www.pexels.com);
-- Loading spinner animation (https://www.npmjs.com/package/react-loading).
+- Loading spinner animation (https://www.npmjs.com/package/react-spinners-components / https://github.com/kazimkazam/react-spinners-components).
 
 ## Licence
 

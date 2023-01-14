@@ -26,7 +26,7 @@ The SPA fetches all photos from Pexels API (https://www.pexels.com/api/documenta
 
 The loading spinner animation used while waiting for photos to be fetched and shown is based on the react-spinners-components package (https://www.npmjs.com/package/react-spinners-components / https://github.com/kazimkazam/react-spinners-components).
 
-The Footer component was not planned to be like it is, i.e., not even looks like a footer... But I'll leave this way for now. This way, is also preety fast to change the component's look to whatever we may want to.
+The Footer component was not planned to be like it is, I mean, not even looks like a footer and it is not a footer... But I'll leave it this way for now. This way, is also preety fast to change the component's look to whatever we may want to.
 
 The website is running on:
 
